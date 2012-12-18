@@ -3,7 +3,7 @@ include Makefile.inc
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CD) $(BUILD_DIR); $(CC) $(CLIBS) -o ../$(TARGET) $(OBJS)
+	$(CD) $(BUILD_DIR); $(CC) $(OBJS) $(CLIBS) -o ../$(TARGET)
 
 fresh: clean all
 
